@@ -1,0 +1,76 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[activeacute,spanish]{babel}
+%\usepackage[ansinew]{inputenc}
+\usepackage[utf8]{inputenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[letterpaper,includeheadfoot, top=0.5cm, bottom=3.0cm, right=2.0cm, left=2.0cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{url}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{colortbl}
+
+\usepackage{listings} %Codigo
+\lstset{language=C, tabsize=4,framexleftmargin=5mm,breaklines=true}
+
+\begin{document}
+%\begin{sf}
+% --------------- ---------PORTADA --------------------------------------------
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+%------------------ TÍTULO -----------------------
+\vspace*{6cm}
+\begin{center}
+\Huge  {Definiendo Formal e Informalmente el Problema Planteado}
+\vspace{1cm}
+\end{center}
+%----------------- NOMBRES ------------------------
+\begin{center}
+\begin{tabular}{ll}
+Autor: & José Luis Pérez Avila\\
+Profesor & Said Polanco Maragon\\
+& Cd. Victoria, Tamaulipas.
+\end{tabular}
+\end{center}
+%\date{}
+
+\section{Definicion Informal del Problema}
+Encontar un modelo de programación en el lenguaje de python que sea posible utilizar en una computadora embebida y que nos ayude a la identificación de rostros del piloto y copiloto con una presición de 95\% o más por medio de fotos tomadas en el habitáculo por una camara de un vehículo de gamma media baja para que alerte al dueño del vehículo y a una segunda persona cuando un desconocido ingrese al mismo por medio de una aplicación móvil.
+
+\section{Definiendo Formalmente el Problema}
+Un problema bien definio que tiene propiedades analíticas adecuadas y cuyas soluciones posibles tienen una estructura conveniente. Suelen incluir:
+
+\begin{itemize}
+\item[1]{La Existencia de alguna solución.}
+\item[2]{La unicidad de la solución.}
+\item[3]{La solución depende de manera continua de las condiciones iniciales.}
+\end{itemize}
+
+Un problema del tipo planteado en el espacio de Banach está bien propuesto en el sentido de Hadarmad si tiene las tres propiedades siguientes:
+\begin{itemize}
+\item[1]{\textbf{Unicidad}:Las soluciones estrictas están determinadas unívocamente por las condiciones iniciales.}
+\item[2]{\textbf{Conjunto denso}: El conjunto \textit{u} de todas las condiciones iniciales correspondientes a las soluciones posibles es denso en el espacio de Banach en el que se plantea el problema.}
+\item[3]{\textbf{Acotación local}: Para algún intervalo finito $[0,t_0]$ existe una constante $K = K(t_0)$ tal que cada solución estricta satisface la desigualdad: $\left \| u(t) \right \| \leq K \left \| u_0 \right \|$ para $0 \leq t \leq t_0$ }
+\end{itemize}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
